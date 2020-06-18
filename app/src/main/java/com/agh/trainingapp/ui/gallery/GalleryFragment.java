@@ -60,15 +60,9 @@ public class GalleryFragment extends Fragment implements DispTrainingAdapter.OnT
 
     @Override
     public void onTrainingClick(int position) {
-//        DescriptionFragment descriptionFragment = new DescriptionFragment();
-//        descriptionFragment.setTraining(trainingArrayList.get(position));
-//        getFragmentManager()
-//                .beginTransaction()
-//                .replace(R.id.fragmentContainer, descriptionFragment)
-//                .addToBackStack(null)
-//                .commit();
 
         Intent i = new Intent(getActivity(), TrainingInfo.class);
+        i.putExtra("num", "value");
         startActivity(i);
         ((Activity) getActivity()).overridePendingTransition(0, 0);
 
