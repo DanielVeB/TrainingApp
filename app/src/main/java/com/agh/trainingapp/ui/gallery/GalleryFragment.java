@@ -1,5 +1,7 @@
 package com.agh.trainingapp.ui.gallery;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,6 +67,11 @@ public class GalleryFragment extends Fragment implements DispTrainingAdapter.OnT
 //                .replace(R.id.fragmentContainer, descriptionFragment)
 //                .addToBackStack(null)
 //                .commit();
+
+        Intent i = new Intent(getActivity(), TrainingInfo.class);
+        startActivity(i);
+        ((Activity) getActivity()).overridePendingTransition(0, 0);
+
     }
 
     @Override
