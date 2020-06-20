@@ -17,5 +17,6 @@
     <string name="show_description">Description</string>
     <string name="time">Time</string>
     <string name="exercises">exercises</string>
+    <string name="hello">hello</string>
 
 </resources>
