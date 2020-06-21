@@ -52,7 +52,6 @@ public class GalleryFragment extends Fragment implements DispTrainingAdapter.OnT
         layoutManager = new LinearLayoutManager(this.getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        // specify an adapter (see also next example)
         mAdapter = new DispTrainingAdapter(trainingArrayList, this);
         recyclerView.setAdapter(mAdapter);
         return view;
