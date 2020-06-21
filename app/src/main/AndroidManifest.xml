@@ -22,8 +22,11 @@
         <activity android:label="Training Info"
             android:name=".ui.gallery.TrainingInfo"/>
         <activity android:name=".ui.gallery.TrainingInfo$DetailsActivity" />
-
-
+	<receiver android:name=".broadcast.MyBroadcastReceiver"  android:exported="true">
+    		<intent-filter>
+        		<action android:name="android.intent.action.AIRPLANE_MODE" />
+    		</intent-filter>
+	</receiver>
     </application>
 
 </manifest>
